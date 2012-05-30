@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+
+{% block extrastyle %}
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/sharing_detail.css" />
+{% endblock %}
+
+{% block extrajs %}
+	<script src="{{ MEDIA_URL }}js/sharing_detail.js" type="text/javascript"></script>
+{% endblock %}
+
+{% block pageheader %}
+  <div class="page-header">
+	  <h2>{{sharing.title}}</h2>
+  </div>
+{% endblock %}
+          
+          
+{% block centercontent %}
+	
+    <div class="row margin_bottom_10">
+	    <div class="span2 vote-follow-div">
+	        <input type="hidden" value="{{sharing.id}}"> 
+	        <span class="vote-count-post j-vote-up-span-{{sharing.id}}">{{ sharing.sharing_data.plus_voting_count|default:0 }}</span>
+	        <a class="
+                    {%if sharing.voted_value == 1 %}
+                         vote-up-on 
+                    {% else %}
+                         vote-up-off 
+                    {%endif%} 
+                    {% if user.is_anonymous or sharing.voted_value != 0 %} 
+                        disabled 
+                    {% endif %}" 
+	           href="/sharings/{{sharing.id}}/vote/1/">
+	        </a> 
+	        <a class="
+	                   {%if sharing.voted_value == -1 %}
+	                        vote-down-on 
+	                   {%else%}
+	                        vote-down-off 
+	                   {%endif%} 
+	                   {% if user.is_anonymous or sharing.voted_value != 0 %}
+	                       disabled
+	                   {% endif %}" 
+	           href="/sharings/{{sharing.id}}/vote/-1/">
+	         </a> 
+	        <span class="vote-count-post j-vote-down-span-{{sharing.id}}">{{ sharing.sharing_data.minus_voting_count|default:0 }}</span>
+	        <a class="star-off 
+	          {% if user.is_authenticated %}
+	              {% if is_followed %} 
+	                  star-on 
+	              {% endif %}
+	          {% else %}
+	               disabled 
+	          {% endif %}
+	        "
+	          href="/sharings/{{sharing.id}}/follow/" title="" ></a>
+	        <div class="favoritecount">
+	            <span class="j-follow-span-{{sharing.id}}">{{ sharing.sharing_data.follow_count|default:0 }}</span>
+	        </div>
+	    </div>
+	    
+	    <div class="span11">
+	       <div class="row">
+			    <div class="span3">
+			       {% include "include/_img.html" with sharing=sharing %}
+			    </div>
+			    
+			    <div class="span8">
+			    </div>
+	       </div>
+	       <div  class="row">
+		        <p>{{sharing.content}}<p>
+		        <div>
+		            {% for tag in sharing.tags.all %}
+		                 <a rel="tag" title="" class="a_tag" href="/sharings/tag/{{ tag.id }}/sharings/">{{ tag.name }}</a> 
+		            {% endfor %}
+		        </div>
+		        <div class="pull-right row">
+		            {% include "include/_user_info.html" with sharing=sharing %}
+		        </div>
+	       </div>
+	    </div>
+    </div>
+    {% include "include/_sharing_comments.html"  with sharing=sharing %}
+
+    <!-- response sharing -->
+    <div class="content-header">
+        <div class="row">
+	        <div class="span8">
+	            <h3>{{ sharing.resharings.count }}{% if sharing.resharings.count <= 1 %} Respond Sharing {% else %} Respond Sharings {% endif %}</h3>
+	        </div>
+	        <div class="span5">
+	              <ul data-tabs="tabs" class="tabs margin_0 border_width_0 pull-right">
+	                  <li><a href="#profile">newest</a></li>
+	                  <li class="active"><a href="#home">votes</a></li>
+	                  <li><a href="#messages">active</a></li>
+	             </ul>
+	        </div>
+        </div>
+    </div>
+    
+	<!-- one resharing -->
+	{% for sharing in resharings %}
+	<div class="content-header">
+	   <div class="row margin_bottom_10">
+	        <div class="span2 vote-follow-div">
+	            <input type="hidden" value="{{sharing.id}}"> 
+	            <span class="vote-count-post j-vote-up-span-{{sharing.id}}">{{ sharing.sharing_data.plus_voting_count|default:0 }}</span>
+	            <a class="
+	                       {%if sharing.voted_value == 1 %}
+	                            vote-up-on 
+	                       {%else%}
+	                            vote-up-off 
+	                       {%endif%} 
+	                       {% if user.is_anonymous or sharing.voted_value != 0 %}
+	                            disabled 
+	                       {% endif %}" 
+	               href="/sharings/{{sharing.id}}/vote/1/">
+	            </a> 
+	            <a class="
+	                       {%if sharing.voted_value == -1 %}
+	                            vote-down-on 
+	                       {%else%}
+	                            vote-down-off 
+	                       {%endif%} 
+	                       {% if user.is_anonymous or sharing.voted_value != 0 %}
+	                            disabled 
+	                       {% endif %}" 
+	               href="/sharings/{{sharing.id}}/vote/-1/">
+	             </a> 
+	            <span class="vote-count-post j-vote-down-span-{{sharing.id}}">{{ sharing.sharing_data.minus_voting_count|default:0 }}</span>
+	        </div>
+	        
+	        <div class="span3">
+	           {% include "include/_img.html" with sharing=sharing %}
+	        </div>
+	        
+	        <div class="span8">
+	            <p>{{sharing.content}}<p>
+	            <div>
+	                {% for tag in sharing.tags.all %}
+	                     <a rel="tag" title="" class="a_tag" href="/sharings/tag/{{ tag.id }}/sharings/">{{ tag.name }}</a> 
+	                {% endfor %}
+	            </div>
+	            <div class="pull-right row">
+	                {% include "include/_user_info.html" with sharing=sharing %}
+	            </div>
+	        </div>
+        </div>
+		{% include "include/_sharing_comments.html"  with sharing=resharing %}
+	</div>
+	{% endfor %}
+
+	<a name="new-answer"></a>
+	<form id="post-form"></form>
+{% endblock %}
+
+{% block rightcontent %}
+    {% include "include/_sidebar_tags.html" %}
+{% endblock %}

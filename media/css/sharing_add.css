@@ -1,0 +1,36 @@
+.input.span10 {
+  width: 570px;
+}
+
+.padding-width18{
+  padding-left: 18px;
+  padding-right: 18px;
+
+}
+
+.mini-layout {
+  margin-bottom: 20px;
+  padding: 9px 4px;
+  background-color:#F5F5F5;
+}
+
+.mini-layout {
+  border: 1px solid #DDDDDD;
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+}
+
+
+.span-size{
+	display: inline-block;
+    font-size: 13px;
+    font-style: normal;
+    line-height: normal;
+    padding: 5px 14px 6px;
+    width: 250px;
+}
+
+
+.image-space{
+	margin-right: 10px;
+}

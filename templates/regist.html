@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block extrastyle %}
+    <link rel="stylesheet" href="{{ MEDIA_URL }}js/contributes/formValidator/style/validator.css" />
+{% endblock %}
+
+{% block extrajs %}
+    <script src="{{ MEDIA_URL }}js/contributes/formValidator/js/jquery_last.js" type="text/javascript"></script>
+    <script src="{{ MEDIA_URL }}js/contributes/formValidator/js/formValidator.js" type="text/javascript"></script>
+    <script src="{{ MEDIA_URL }}js/contributes/formValidator/js/formValidatorRegex.js" type="text/javascript"></script>
+    <script src="{{ MEDIA_URL }}js/regist_validator.js" type="text/javascript"></script>
+{% endblock %}
+
+{% block centercontent %}
+<form method="POST" action="{% url regist %}" id="regist_form" name="regist_form">
+   {% csrf_token %}
+   <fieldset>
+    <div class="clearfix">
+        <label for="id_username">Username:</label>
+        <div class="input">
+            <input type="text" size="30" name="username" id="id_username"
+                class="span5" maxlength="24">
+            <span id="id_usernameTip" style="width:250px"></span>
+        </div>       
+    </div>
+    
+    <div class="clearfix">
+        <label for="id_password">Password:</label>
+        <div class="input">
+            <input type="password" size="30" name="password" id="id_password"
+                class="span5 " maxlength="64">
+            <span id="id_passwordTip" style="width:250px"></span>
+        </div>
+    </div>
+    
+    <div class="clearfix">
+        <label for="id_confirm">Confirm:</label>
+        <div class="input">
+            <input type="password" size="30" name="confirm" id="id_confirm"
+                class="span5 " maxlength="24">
+            <span id="id_confirmTip" style="width:250px"></span>
+        </div>
+    </div>
+    
+    <div class="clearfix">
+        <label for="id_email">E-mail:</label>
+        <div class="input">
+            <input type="text" size="30" name="email" id="id_email"
+                class="span5" maxlength="24">
+            <span id="id_emailTip" style="width:250px"></span>
+        </div>
+    </div>
+    
+    <div class="clearfix row">
+        <input type="submit" value="Register" id="regist_submit"
+               class="btn primary offset6 padding-width10" name="button">
+    </div>
+  </fieldset>
+  
+</form>
+{% endblock centercontent %}

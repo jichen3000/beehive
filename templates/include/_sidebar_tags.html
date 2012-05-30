@@ -1,0 +1,8 @@
+<h4 id="h-recent-tags" >Recent Tags</h4>
+{% for tag in tags %}
+   <div class="margin_bottom_10">
+       <a class="a_tag" rel="tag" href="/sharings/tag/{{ tag.id }}/sharings/">{{tag.name}}</a>
+       <span class="item-multiplier">×&nbsp;{{ tag.sharings.count }}</span>
+       <br>
+   </div>
+{% endfor%}

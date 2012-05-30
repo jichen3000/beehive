@@ -1,0 +1,38 @@
+{% if sharings_list %}
+<div class="hide alert-message block-message success" id="prompt_message">
+         <p>Add another {{ sharings_list|length }} sharings...</p>
+         </div>
+{% for sharing in sharings_list %}
+ <div  id="sharing-summary-{{ sharing.id }}"  class="content-header">
+    <div class="row margin_bottom_10">
+        <div class="span2">
+            <div class="stats pull-left">
+                <div class="status answered">
+                    <span>{{ sharing.comment_set.count }}</span>comments
+                </div>
+                <div class="status answered">
+                    <span>{{ sharing.resharings.count }}</span>responses
+                </div>
+            </div>
+            <div class="statsarrow"></div>
+            <div title="414,504 views" class="views supernova">0 views</div>
+        </div>
+        <div class="span3">
+            {% include "include/_img.html" with sharing=sharing %}
+        </div>
+        <div class="span8">        
+            <h4><a href="/sharings/{{ sharing.id }}/">{{ sharing.title }}</a></h4>
+            <p>{{ sharing.content }}</p>
+            <div>
+                {% for tag in sharing.tags.all %}
+                    <a rel="tag" class="a_tag" title="" href="/sharings/tag/{{ tag.id }}/sharings/">{{ tag.name }}</a> 
+                {% endfor %}
+            </div>
+            <div class="row pull-right">
+                {% include "include/_user_info.html" with sharing=sharing %}
+            </div>  
+        </div>
+    </div>
+ </div>
+{% endfor %}
+{% endif %}

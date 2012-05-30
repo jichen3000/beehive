@@ -1,0 +1,41 @@
+{% for sharing in sharings_list %}
+<div class="js-stream-item stream-item">
+   <input type="hidden" name="sharing_id" value="{{ sharing.id }}">
+   <div class="more">»</div>
+   <div id="sharing-summary-{{ sharing.id }}" class="tweet stream-tweet">
+       <div class="tweet-image">
+          <a href="#"><img src="{{ MEDIA_URL }}img/person.png"/></a>
+       </div>
+       <div class="tweet-content">
+            <div class="tweet-row">
+              <span class="tweet-username">
+                 <a class="tweet-screen-name">{{ sharing.author.username }}</a>
+                 <span class="tweet-full-name"></span>
+              </span>
+            </div>
+            <div class="tweet-row">
+              <div class="tweet-text">
+                 <p>{{ sharing.content }}</p>
+              </div>
+            </div>
+            <div class="tweet-row">
+              {% include "include/_img.html" with sharing=sharing %}
+            </div>
+            <div class="tweet-row">
+              <a class="tweet-timestamp js-permalink" href="">
+                <span data-long-form="true" data-time="1326334193000" title="10:09 AM, Jan 12th" class="_timestamp js-tweet-timestamp">{{ sharing.created }}</span>
+              </a>
+              <span class="tweet-actions js-actions">
+                <span class="tweet-action action-favorite">
+                  <a title="Favorite" class="favorite-action js-toggle-fav" href="#"><span><i></i><b>Favorite</b></span></a>
+                </span>
+                <span class="tweet-action action-retweet">
+                  <a title="Retweet" class="retweet-action js-toggle-rt" href="#"><span><i></i><b>Retweet</b></span></a>
+                </span>
+                <a title="Reply" data-screen-name="nhk_news" class="reply-action js-action-reply" href="#"><span><i></i><b>Reply</b></span></a>
+              </span>
+            </div>
+       </div>
+   </div>
+  </div>
+{% endfor %}

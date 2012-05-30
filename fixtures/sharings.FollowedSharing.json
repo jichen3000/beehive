@@ -1,0 +1,12 @@
+[
+    {
+        "pk": 1, 
+        "model": "sharings.followedsharing", 
+        "fields": {
+            "follower": 1, 
+            "updated": "2012-01-05 16:14:48", 
+            "followed_sharing": 8, 
+            "created": "2012-01-05 16:14:48"
+        }
+    }
+]

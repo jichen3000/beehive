@@ -1,0 +1,106 @@
+{% extends "base.html" %} {% block extrastyle %}
+<link rel="stylesheet" href="{{ MEDIA_URL }}css/sharing_add.css" />
+{% endblock %} {% block extrajs %}
+<script src="{{ MEDIA_URL }}js/sharing_add.js" type="text/javascript"></script>
+<script src="{{ MEDIA_URL }}js/contributes/jquery/plugins/jquery.upload-1.0.2.min.js" type="text/javascript"></script>
+<script src="{{ MEDIA_URL }}js/contributes/jquery/plugins/jquery.upload-1.0.2.js" type="text/javascript"></script>
+{% endblock %} {% block pageheader %}
+<div class="page-header">
+	<h2>Create a Sharing</h2>
+</div>
+{% endblock %} {% block centercontent %}
+<div>
+	<p id="auto_save_p"></p>
+</div>
+
+<form action="" method="post" enctype="multipart/form-data"
+	id="add_sharing_form">
+	<fieldset>
+		<legend></legend>
+		<div class="clearfix">
+			<label for="id_title">Title</label>
+			<div class="input">
+				<input type="text" size="30" name="title" id="id_title"
+					class="span10 changeable">
+			</div>
+		</div>
+		<!-- /clearfix -->
+		<div class="clearfix hide" id="file_input_template">
+			<label for="id_file">File input</label>
+			<div class="input">
+				<input id="id_file" class="input-file span10 changeable" type="file"
+					size="87" name="file">
+			</div>
+		</div>
+
+		<div class="clearfix hide" id="filename_preview_template">
+			<div class="input">
+				<span class="label span-size label_nature"></span>&nbsp&nbsp <input
+					type="button" class="btn" value="Delete" id="delete_file"><input
+					type="hidden" name="mediafileid" id="id_mediafile" />
+			</div>
+		</div>
+
+		<div class="clearfix">
+			<label for="id_file">File input</label>
+			<div class="input">
+				<input type="file" name="file" id="id_file"
+					class="input-file span10 changeable" size="87">
+			</div>
+		</div>
+
+
+		<div class="clearfix">
+			<label for="textarea">Content</label>
+			<div class="input">
+				<textarea rows="5" cols="40" name="content" id="id_content"
+					class="span10 changeable"></textarea>
+				<span class="help-block"> enter at most 200 characters. </span>
+			</div>
+		</div>
+
+		<div class="clearfix">
+			<label for="id_tags">Tags</label>
+			<div class="input">
+				<input type="text" size="30" name="tags" id="id_tags"
+					class="span10 changeable">
+			</div>
+		</div>
+
+		<span class="input label">Preview</span>
+		<div class="input mini-layout span10">
+			<div id="preview_title_div">
+				<h2 id="preview_title"></h2>
+			</div>
+
+			<div id="preview_image">
+				<img name='mediafile' id="image_preview_template"
+					class="hide image-space" src='' />
+			</div>
+			<div id="preview_content_div" class="clear_both">
+				<p id="preview_content"></p>
+			</div>
+			<div id="preview_tags_div">
+				<span class="label label_nature" id="preview_tags">Tags</span>
+			</div>
+		</div>
+
+		<div class="clearfix row">
+			<input type="submit" value="Share" id="sharing_submit"
+				class="btn primary offset11 padding-width18">
+		</div>
+
+		<input type="hidden" name="sharingid" id="id_sharingid" />
+	</fieldset>
+</form>
+
+
+{% endblock %} {% block rightcontent %}
+<div class="alert-message block-message info">
+	<h4>Heads up</h4>
+
+	<p>We just top the sharings which have pictures</p>
+
+
+</div>
+{% endblock %}

@@ -1,0 +1,69 @@
+.vote-up-off,.vote-up-on,.vote-down-off,.vote-down-on,.star-on,.star-off,.comment-up-off,.comment-up-on,.comment-flag
+{
+	font-size: 1px;
+	background-image: url('../img/sprites.png?v=4');
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	width: 41px;
+	height: 25px;
+}
+.vote-up-off.disabled,.vote-up-on.disabled,.vote-down-off.disabled,.vote-down-on.disabled,.star-on.disabled,.star-off.disabled
+{
+	cursor:default;
+}
+
+.vote-up-off, .vote-up-off.disabled:hover{
+	background-position: 0px -265px;
+	opacity: 0.65;
+}
+
+.vote-up-off:hover{
+	background-position: 0px -230px;
+	opacity: 0.18;
+}
+
+.vote-up-on.disabled {
+	background-position: 0px -84px;
+	opacity: 0.65;
+}
+
+.vote-down-off, .vote-down-off.disabled:hover  {
+	background-position: 0px -300px;
+	opacity: 0.65;
+}
+
+.vote-down-off:hover {
+	background-position: 0px -330px;
+	opacity: 0.18;
+}
+.vote-down-on.disabled {
+	background-position: 0px -114px;
+	opacity: 0.65;
+}
+
+.star-off, .star-on{
+	background-position: 0px -150px;
+	width: 33px;
+	height: 31px;
+	margin-top: 5px;
+}
+
+.star-on{
+	background-position: 0px -190px;
+}
+
+.vote-count-post {
+	display: block;
+	color: #808185;
+	text-align: center;
+	font-size: 180%;
+}
+.favoritecount {
+	text-align: center;
+	color: #808185;
+}
+
+.comment-date {
+	color: #999;
+}

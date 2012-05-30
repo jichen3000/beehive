@@ -1,0 +1,13 @@
+[
+    {
+        "pk": 1, 
+        "model": "sharings.sharingvoting", 
+        "fields": {
+            "voter": 1, 
+            "updated": "2012-01-05 16:13:13", 
+            "sharing": 8, 
+            "value": 1, 
+            "created": "2012-01-05 16:13:13"
+        }
+    }
+]

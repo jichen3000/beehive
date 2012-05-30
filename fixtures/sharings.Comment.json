@@ -1,0 +1,343 @@
+[
+    {
+        "pk": 1, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "I like it", 
+            "updated": "2011-12-23 11:33:58", 
+            "created": "2011-12-23 11:33:58", 
+            "commented_sharing": 1, 
+            "author": 3
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "yes, I agree", 
+            "updated": "2011-12-23 11:34:19", 
+            "created": "2011-12-23 11:34:19", 
+            "commented_sharing": 1, 
+            "author": 5
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "oh, I see your comments", 
+            "updated": "2011-12-23 11:34:35", 
+            "created": "2011-12-23 11:34:35", 
+            "commented_sharing": 1, 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "Isn't it", 
+            "updated": "2011-12-23 11:35:22", 
+            "created": "2011-12-23 11:35:22", 
+            "commented_sharing": 2, 
+            "author": 4
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "I would say it is good", 
+            "updated": "2011-12-23 11:35:42", 
+            "created": "2011-12-23 11:35:42", 
+            "commented_sharing": 2, 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "why", 
+            "updated": "2011-12-23 11:35:59", 
+            "created": "2011-12-23 11:35:59", 
+            "commented_sharing": 2, 
+            "author": 5
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "we need hard work, I guess.", 
+            "updated": "2011-12-23 13:45:42", 
+            "created": "2011-12-23 13:45:35", 
+            "commented_sharing": 3, 
+            "author": 5
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "I don't think so.", 
+            "updated": "2011-12-23 13:46:03", 
+            "created": "2011-12-23 13:46:03", 
+            "commented_sharing": 3, 
+            "author": 4
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "This is my 5th Pentax Digital Camera. I currently own and use the Pentax K-r, K-x and K200. They are all exceptional cameras that produce stunning results with nominal effort. By far, the K-r has shown it superiority in rapid focus in low light conditions. ", 
+            "updated": "2012-01-02 10:39:46", 
+            "created": "2012-01-02 10:39:46", 
+            "commented_sharing": 8, 
+            "author": 2
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "Another new feature is the capability to use AA batteries as well as Lithium ion. It comes with a Lithium ion battery and charger to start. ", 
+            "updated": "2012-01-02 10:40:06", 
+            "created": "2012-01-02 10:40:06", 
+            "commented_sharing": 8, 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "WOW - Loved Pentax since my First Pentac K SLR when I was a teen. It was rugged, easy to use and took great film pics ( Yea I am old! ). The features on this DSLR are amazing. The auto functions work great. set it on manual, mount on old lense from the film camera and work just fine. Great vacation pics from Hawaii. Highly recommend.", 
+            "updated": "2012-01-02 10:40:30", 
+            "created": "2012-01-02 10:40:30", 
+            "commented_sharing": 8, 
+            "author": 4
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "I bought this camera based on some nice features and a \"best buy\" rating from Consumer Reports. My first use was to record in both stills and video my father's 100th birthday party. I effortlessly created a wondrous collection of photographs of four generations of family that I probably could not have done without the range of capabilities of a good SLR. ", 
+            "updated": "2012-01-02 10:40:56", 
+            "created": "2012-01-02 10:40:56", 
+            "commented_sharing": 8, 
+            "author": 5
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "This DSLR is just amazing. It takes fantastic pictures and it has so many top end features for a camera in its price range. It's very easy for a novice photographer to learn to take great pictures with this camera using the automatic settings yet it has a lot of custom features and scene modes that a professional photographer could appreciate as well. It is really going to be fun learning to work all of the \"bells and whistles\" and rediscovering photography all over again with this DSLR. ", 
+            "updated": "2012-01-02 10:41:28", 
+            "created": "2012-01-02 10:41:28", 
+            "commented_sharing": 8, 
+            "author": 3
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "My complaints are that this system broke down within a month of winning it from a contest. It was no scam if that's what you think because I've heard many complaints about the red ring of death. Two why buy this console if it costs money for Internet even with a connection if the PS3 you get for free.All and all I hated it and wish we hadn't won it.", 
+            "updated": "2012-01-02 10:42:19", 
+            "created": "2012-01-02 10:42:19", 
+            "commented_sharing": 7, 
+            "author": 4
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "I see on the box it had kinect and a game . but was not in the box. but other than that the kid loved it.", 
+            "updated": "2012-01-02 10:42:30", 
+            "created": "2012-01-02 10:42:30", 
+            "commented_sharing": 7, 
+            "author": 3
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "We now have to wait over 2 weeks because the xbox 360 won't connect to the controller. We have to send back and wait for the repair to be done. Sure makes for a boring Christmas day when you cab't play with your new toy.", 
+            "updated": "2012-01-02 10:42:41", 
+            "created": "2012-01-02 10:42:41", 
+            "commented_sharing": 7, 
+            "author": 3
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "If you want to read pdf's, then you must convert them to kindle format. Otherwise, they are almost unreadable. You can't read books in landscape  On the other hand, as a reading device is a great product", 
+            "updated": "2012-01-02 10:43:25", 
+            "created": "2012-01-02 10:43:25", 
+            "commented_sharing": 6, 
+            "author": 5
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "I got, upon research and request, the Kindle Touch 6\" E Ink Display with WIFI and without ads as an Xmas gift. I really like this product and found it very easy to use. Buying Ebooks is cheap and quick. I bought a Marware Sportgrip for protection, a Belking neoprete sleeve for travel, an Ereader light, and a screen protector sheet. ", 
+            "updated": "2012-01-02 10:44:02", 
+            "created": "2012-01-02 10:44:02", 
+            "commented_sharing": 6, 
+            "author": 3
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "I have a very nice sofa that was the wrong color. Initially, my husband and I planned on buying a new sofa, but we were very displeased with the selection in local stores. ", 
+            "updated": "2012-01-03 16:17:01", 
+            "created": "2012-01-03 16:17:01", 
+            "commented_sharing": 18, 
+            "author": 4
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "Very impressed with this slipcover. Was replacing an old dirty 1-piece slipcover and the difference is remarkable. It looks like an expensive sofa now.", 
+            "updated": "2012-01-03 16:17:21", 
+            "created": "2012-01-03 16:17:21", 
+            "commented_sharing": 18, 
+            "author": 4
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "Very nice ^_^", 
+            "updated": "2012-01-03 16:23:17", 
+            "created": "2012-01-03 16:23:17", 
+            "commented_sharing": 19, 
+            "author": 4
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "I have been using this sofa for close to 10 days. The sofa is really comfortable and its really worth the price. The package arrived on time without any damage. ", 
+            "updated": "2012-01-03 16:23:41", 
+            "created": "2012-01-03 16:23:41", 
+            "commented_sharing": 19, 
+            "author": 4
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "Love this bed! It took a little bit of time to put it together, but it is very sturdy. I ordered the headboard with it, but I think you need extra bolts to attach it. ", 
+            "updated": "2012-01-03 16:34:28", 
+            "created": "2012-01-03 16:34:28", 
+            "commented_sharing": 20, 
+            "author": 4
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "My bed arrived today, except it's not really a bed. It's more like a stand for your mattress. ", 
+            "updated": "2012-01-03 16:34:47", 
+            "created": "2012-01-03 16:34:47", 
+            "commented_sharing": 20, 
+            "author": 4
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "I bought this Areobed (or at the least, a model very similar) 8 years ago and have had nothing but good experiences. ", 
+            "updated": "2012-01-03 16:37:58", 
+            "created": "2012-01-03 16:37:58", 
+            "commented_sharing": 21, 
+            "author": 4
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "We purchased this queen sized aero bed for our daughter and son-in-law who have recently moved to a 2 bedroom condo in New Haven, CT. The second bedroom is really their library/reading room/office, so it is not handy to have it fixed up as a bedroom ... ", 
+            "updated": "2012-01-03 16:38:14", 
+            "created": "2012-01-03 16:38:14", 
+            "commented_sharing": 21, 
+            "author": 4
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "Great camera. I am super pleased so far with the features, the flexibility and the quality of the images the camera captures. Great camera for the value. While it is not a 2000 dollar Canon.", 
+            "updated": "2012-01-05 14:47:13", 
+            "created": "2012-01-05 14:47:13", 
+            "commented_sharing": 28, 
+            "author": 1
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "I bought this to Bridge my K7 to K5 replacement, however after my assistant (photography apprentice) use it for a couple of hours, she told me she wanted to by it. ", 
+            "updated": "2012-01-05 16:09:24", 
+            "created": "2012-01-05 16:09:24", 
+            "commented_sharing": 29, 
+            "author": 4
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "I replaced a Pentax 1st D camera, which I was very disappointed in. I have owned Pentax cameras since the 60's and I was not happy with this entrance to digital cameras.", 
+            "updated": "2012-01-05 16:09:47", 
+            "created": "2012-01-05 16:09:47", 
+            "commented_sharing": 29, 
+            "author": 5
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "On paper, this camera is fantastic. It is quite small and lightweight. The low light capabilities of this DLSR are amazing. ", 
+            "updated": "2012-01-05 16:10:27", 
+            "created": "2012-01-05 16:10:27", 
+            "commented_sharing": 28, 
+            "author": 4
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "sharings.comment", 
+        "fields": {
+            "content": "I upgraded from the Pentax K-2000 to the Pentax K-R. I have only had the camera a few days but I already have a good impression. ", 
+            "updated": "2012-01-05 16:10:44", 
+            "created": "2012-01-05 16:10:44", 
+            "commented_sharing": 28, 
+            "author": 3
+        }
+    }
+]

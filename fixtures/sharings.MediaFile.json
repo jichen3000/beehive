@@ -1,0 +1,410 @@
+[
+    {
+        "pk": 1, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:57", 
+            "sharing": 3, 
+            "height_px": 497, 
+            "title": "features", 
+            "created": "2011-12-23 14:44:49", 
+            "width_height_rate": 1.33, 
+            "file": "share_media/fixtures-pic/user-features.jpg", 
+            "width_px": 660, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 78017
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:57", 
+            "sharing": 1, 
+            "height_px": 497, 
+            "title": "homepage-anonym", 
+            "created": "2011-12-23 14:51:43", 
+            "width_height_rate": 1.33, 
+            "file": "share_media/fixtures-pic/homepage-anonym.jpg", 
+            "width_px": 660, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 81774
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:57", 
+            "sharing": 1, 
+            "height_px": 497, 
+            "title": "share-product-info", 
+            "created": "2011-12-23 14:53:58", 
+            "width_height_rate": 1.33, 
+            "file": "share_media/fixtures-pic/share-product-info.jpg", 
+            "width_px": 660, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 98342
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:57", 
+            "sharing": 2, 
+            "height_px": 497, 
+            "title": "show-product-info", 
+            "created": "2011-12-23 14:55:19", 
+            "width_height_rate": 1.33, 
+            "file": "share_media/fixtures-pic/show-product-info.jpg", 
+            "width_px": 660, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 98342
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:57", 
+            "sharing": 5, 
+            "height_px": 497, 
+            "title": "tables", 
+            "created": "2011-12-23 14:57:11", 
+            "width_height_rate": 1.33, 
+            "file": "share_media/fixtures-pic/tables.jpg", 
+            "width_px": 660, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 95707
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:57", 
+            "sharing": 4, 
+            "height_px": 499, 
+            "title": "RADModel", 
+            "created": "2011-12-23 14:59:38", 
+            "width_height_rate": 1.56, 
+            "file": "share_media/fixtures-pic/RADModel.JPG", 
+            "width_px": 780, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 28035
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:58", 
+            "sharing": 6, 
+            "height_px": 273, 
+            "title": "my kindle", 
+            "created": "2012-01-02 10:45:27", 
+            "width_height_rate": 1.82, 
+            "file": "share_media/fixtures-pic/kindle1.jpg", 
+            "width_px": 498, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 45662
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:58", 
+            "sharing": 6, 
+            "height_px": 307, 
+            "title": "my kindle2", 
+            "created": "2012-01-02 10:46:05", 
+            "width_height_rate": 1.62, 
+            "file": "share_media/fixtures-pic/kindle2.jpg", 
+            "width_px": 497, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 72593
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:58", 
+            "sharing": 8, 
+            "height_px": 273, 
+            "title": "kr1", 
+            "created": "2012-01-02 10:46:50", 
+            "width_height_rate": 1.82, 
+            "file": "share_media/fixtures-pic/kr1.jpg", 
+            "width_px": 498, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 22808
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:58", 
+            "sharing": 8, 
+            "height_px": 273, 
+            "title": "kr2", 
+            "created": "2012-01-02 10:47:22", 
+            "width_height_rate": 1.82, 
+            "file": "share_media/fixtures-pic/kr2.jpg", 
+            "width_px": 498, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 22650
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:58", 
+            "sharing": 7, 
+            "height_px": 280, 
+            "title": "x360", 
+            "created": "2012-01-02 10:47:54", 
+            "width_height_rate": 1.78, 
+            "file": "share_media/fixtures-pic/x360.jpg", 
+            "width_px": 498, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 16837
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:58", 
+            "sharing": 14, 
+            "height_px": 408, 
+            "title": "Nailhead.jpg", 
+            "created": "2012-01-03 15:23:15", 
+            "width_height_rate": 1.37, 
+            "file": "share_media/fixtures-pic/Nailhead_1.jpg", 
+            "width_px": 558, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 236160
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:58", 
+            "sharing": 18, 
+            "height_px": 480, 
+            "title": "LoungeChair.jpg", 
+            "created": "2012-01-03 16:14:00", 
+            "width_height_rate": 1.0, 
+            "file": "share_media/fixtures-pic/LoungeChair.jpg", 
+            "width_px": 480, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 61336
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:58", 
+            "sharing": 19, 
+            "height_px": 293, 
+            "title": "cute_safa.jpg", 
+            "created": "2012-01-03 16:18:01", 
+            "width_height_rate": 1.5, 
+            "file": "share_media/fixtures-pic/cute_safa.jpg", 
+            "width_px": 440, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 85092
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:58", 
+            "sharing": 20, 
+            "height_px": 480, 
+            "title": "Ebony.jpg", 
+            "created": "2012-01-03 16:31:46", 
+            "width_height_rate": 1.33, 
+            "file": "share_media/fixtures-pic/Ebony.jpg", 
+            "width_px": 640, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 201409
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:59", 
+            "sharing": 21, 
+            "height_px": 440, 
+            "title": "twinbed.jpg", 
+            "created": "2012-01-03 16:36:14", 
+            "width_height_rate": 1.09, 
+            "file": "share_media/fixtures-pic/twinbed.jpg", 
+            "width_px": 480, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 48132
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:59", 
+            "sharing": 22, 
+            "height_px": 375, 
+            "title": "StorageBed .jpg", 
+            "created": "2012-01-03 16:41:20", 
+            "width_height_rate": 1.33, 
+            "file": "share_media/fixtures-pic/StorageBed_.jpg", 
+            "width_px": 500, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 26664
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:59", 
+            "sharing": 23, 
+            "height_px": 320, 
+            "title": "Kichler Lighting.jpg", 
+            "created": "2012-01-03 16:49:06", 
+            "width_height_rate": 1.16, 
+            "file": "share_media/fixtures-pic/Kichler_Lighting.jpg", 
+            "width_px": 370, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 59314
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:59", 
+            "sharing": 24, 
+            "height_px": 441, 
+            "title": "droplight.jpg", 
+            "created": "2012-01-03 16:51:38", 
+            "width_height_rate": 1.0, 
+            "file": "share_media/fixtures-pic/droplight.jpg", 
+            "width_px": 440, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 72099
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:59", 
+            "sharing": 25, 
+            "height_px": 407, 
+            "title": "kitchen.jpg", 
+            "created": "2012-01-03 16:55:30", 
+            "width_height_rate": 1.33, 
+            "file": "share_media/fixtures-pic/kitchen.jpg", 
+            "width_px": 542, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 47561
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:59", 
+            "sharing": 26, 
+            "height_px": 360, 
+            "title": "woodchair.jpg", 
+            "created": "2012-01-03 16:57:31", 
+            "width_height_rate": 1.78, 
+            "file": "share_media/fixtures-pic/safa_1.jpg", 
+            "width_px": 640, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 121477
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 10:38:59", 
+            "sharing": 27, 
+            "height_px": 360, 
+            "title": "roundtable.jpg", 
+            "created": "2012-01-03 17:01:49", 
+            "width_height_rate": 1.78, 
+            "file": "share_media/fixtures-pic/roundtable_1.jpg", 
+            "width_px": 640, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 9308
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 14:41:46", 
+            "sharing": 28, 
+            "height_px": 233, 
+            "title": "kr3.jpg", 
+            "created": "2012-01-05 14:41:46", 
+            "width_height_rate": 2.33, 
+            "file": "share_media/fixtures-pic/kr3.jpg", 
+            "width_px": 544, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 29406
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "sharings.mediafile", 
+        "fields": {
+            "updated": "2012-01-05 16:07:15", 
+            "sharing": 29, 
+            "height_px": 164, 
+            "title": "kr4.jpg", 
+            "created": "2012-01-05 16:07:15", 
+            "width_height_rate": 1.22, 
+            "file": "share_media/fixtures-pic/kr4.jpg", 
+            "width_px": 200, 
+            "type": "PICTURE", 
+            "thumbnail": "", 
+            "size": 6306
+        }
+    }
+]

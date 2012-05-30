@@ -1,0 +1,222 @@
+/********************* atom css  ******************************/
+.display_inline{display:inline}
+.margin_0{margin: 0}
+.margin_bottom_10{margin-bottom: 10px}
+.margin_bottom_18{margin-bottom: 18px;}
+.margin_right_49{margin-right: 49px}
+.margin_left_20{margin-left: 20px}
+.margin-left-6{margin-left: 6px}
+.margin-top-10{margin-top: 10px}
+
+.min_height{min-height:700px}
+
+.clear_both{clear: both}
+.label_nature{text-transform: none}
+.border_width_0{border-width: 0}
+.padding_bottom_13{padding-bottom: 13px}
+.line-height-17{line-height: 17px}
+
+/********************* atom css end  ******************************/
+
+body{
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.jumbotron{
+    /* 40px to make the container go all the way to the bottom of the topbar */
+    padding-top: 40px;
+    min-width: 940px;
+}
+
+.quickstart {
+    background-color: #FFFFFF;
+    background-repeat: repeat-x;
+    padding-top: 40px;
+}
+
+.quickstart .container {
+    margin-bottom: 0;
+}
+
+.quickstart .row {
+    box-shadow: 1px 0 0 #F9F9F9;
+    margin: 0 -20px;
+}
+
+.quickstart [class*="span"] {
+    margin-left: 0;
+    padding: 0 20px 0;
+}
+
+.container>footer p {
+    text-align: center; /* center align it with the container */
+}
+
+.content-header {
+  margin-bottom: 17px;
+  border-bottom: 1px solid #ddd;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.content-header .tabs .active > a, .tabs .active > a:hover{
+   border-bottom-width: 2px;
+}
+
+
+/* Styles you shouldn't keep as they are for displaying this base example only */
+.content #centercontent,.content #rightcontent {
+    min-height: 800px;
+}
+
+/* Give a quick and non-cross-browser friendly divider */
+.content .span3 {
+    margin-left: 0;
+    padding-left: 19px;
+}
+
+.footer {
+    background-color: #EEEEEE;
+    border-top: 1px solid #E5E5E5;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.024) inset;
+    min-width: 940px;
+    padding: 30px 0;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+/****************_user_info.html*********************/
+.user-info {
+    height: 35px;
+    width: 185px;
+}
+
+.user-details {
+    color: #888888;
+    line-height: 17px;
+}
+.user-info .user-details {
+    float: left;
+    margin-left: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 145px;
+}
+.user-info .user-action-time {
+    margin-bottom: 4px;
+    margin-top: 2px;
+}
+.user-info .user-gravatar32 {
+    float: left;
+    height: 32px;
+    width: 32px;
+}
+
+.started .reputation-score {
+    margin-left: 1px;
+}
+
+.reputation-score {
+    color: #444444;
+    font-size: 120%;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.badge1, .badge2, .badge3 {
+    background-image: url("../img/sprites.png?v=4");
+    background-position: -40px -1034px;
+    display: inline-block;
+    height: 11px;
+    line-height: inherit;
+    margin: 0 1px 1px 3px;
+    overflow: hidden;
+    vertical-align: text-bottom;
+    width: 6px;
+}
+.badge2 {
+    background-position: -20px -1034px;
+}
+.badge3 {
+    background-position: 0 -1034px;
+}
+.badgecount {
+    color: #808185;
+    padding-left: 1px;
+}
+
+/**********img div css**************/
+.outside  {
+    width: 160px;
+    height: 90px;
+    padding:4px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    display: block;
+}
+
+.inside {
+    height: 90px;
+    background-color:#F5F5F5;
+    vertical-align: middle;
+}
+
+.inside:hover {
+  border-color: #0069d6;
+  box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+}
+
+
+.sharing_picture img{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+}
+.sharing_picture{
+    width: 160px;
+    height: 90px;
+    position: relative;
+}
+.arrow {
+  z-index: 10;
+  opacity: 0.3;
+  margin: auto;
+  width: 21px;
+  height: 23px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.pre_arrow {
+  background: url(../img/pre-arrow.png);
+  background-position: 0 -22px; 
+  left: -12px;
+}
+.pre_arrow:hover {
+  background-position: 0 0; 
+}
+.next_arrow {
+  background: url(../img/next-arrow.png);
+  background-position: 0 -22px; 
+  right: -12px;
+}
+.next_arrow:hover {
+  background-position: 0 0; 
+}
+
+/*********tag css********/
+.a_tag{
+    background-color: #F9F9F9;
+    border-radius: 0 0 4px 0;
+    border: 1px solid #DDDDDD;
+    padding: 1px 3px 2px;
+}
+
+/***********navigator button css**************
+
+***/

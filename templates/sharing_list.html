@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block extrastyle %}
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/sharing_list.css" />
+{% endblock %}
+
+{% block extrajs %}
+    <script src="{{ MEDIA_URL }}js/sharing_list.js" type="text/javascript"></script>
+    <script src="{{ MEDIA_URL }}js/slide_picture.js" type="text/javascript"></script>
+{% endblock %}
+
+{% block pageheader %}
+{% endblock %}
+
+{% block centercontent %}
+    <div class="content-header">
+        <div class="row">
+			<div class="span9">
+				<h3>{{ title }}</h3>
+	        </div>
+	        <div class="span4">
+	              <ul data-tabs="tabs" class="tabs margin_0 border_width_0 pull-right">
+	                  <li><a href="">active</a></li>
+	                  <li class="active"><a href="#home">votes</a></li>
+	                  <li><a href="#messages">oldest</a></li>
+	             </ul>
+	        </div>
+        </div>
+	</div>
+	<div id="sharings-list-content" class="tab-content">
+	   <div class="tab-pane">
+	   </div>
+	   <div class="tab-pane"></div>
+	   <div class="tab-pane active" id="append_more_contents">
+	 {% include "include/_sharing_list_content.html" %}
+		</div>
+		 <div id="load_more_contents">
+		 </div>
+		{% if sharings_list|length = 10 %}
+         <a href="#" class="btn" id="load_more_button">load more</a>
+        <input type="hidden"  id="current_page" value="1" />
+        <input type="hidden" id="num_pages" value="{{ num_pages }}">
+        {% endif %}
+       
+	 </div>
+{% endblock %}
+
+{% block rightcontent %}
+     {% include "include/_sidebar_tags.html" %}
+{% endblock %}

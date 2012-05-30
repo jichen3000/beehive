@@ -1,0 +1,29 @@
+{% for comment in comments %}
+<div class="js-stream-item stream-item">
+   <input type="hidden" name="sharing_id" value="{{ sharing.id }}">
+   <div class="more">»</div>
+   <div id="sharing-summary-{{ sharing.id }}" class="tweet stream-tweet">
+       <div class="tweet-image">
+          <a href="#"><img src="{{ MEDIA_URL }}img/person.png"/></a>
+       </div>
+       <div class="tweet-content">
+            <div class="tweet-row">
+              <span class="tweet-username">
+                 <a class="tweet-screen-name">{{ comment.author.username }}</a>
+                 <span class="tweet-full-name"></span>
+              </span>
+            </div>
+            <div class="tweet-row">
+              <div class="tweet-text">
+                 <p>{{ comment.content }}</p>
+              </div>
+            </div>
+						<div class="tweet-row">
+							<a class="tweet-timestamp js-permalink" href="">
+							  <span data-long-form="true" data-time="1326334193000" title="10:09 AM, Jan 12th" class="_timestamp js-tweet-timestamp">{{ comment.created }}</span>
+							</a>
+						</div>
+       </div>
+   </div>
+  </div>
+{% endfor %}

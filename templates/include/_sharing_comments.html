@@ -1,0 +1,56 @@
+<!-- column 1: transfer -->
+<!-- column 2: comment -->
+<div class="row">
+	<div class="span11 offset2">
+        <table id="comments-{{sharing.id}}" class="zebra-striped">
+	            <tbody>
+	            <!-- template used for one comment -->
+	                <tr id="sharing_comment_template" class="hide">
+	                   <td><!-- 21 --></td>
+	                   <td>
+	                    <div>
+	                        <span class="comment-copy"><!-- comment.content --></span> &nbsp;&nbsp;
+	                        <a href="#" title="3139 reputation" class="comment-user"><!-- comment username --></a> 
+	                        <span class="comment-date" dir="ltr"><!-- comment.created --></span>
+	                    </div>
+	                   </td>
+	                </tr>
+	                {% for comment in sharing.comment_set.all %}
+	                    <tr id="sharing_comment{{ comment.id }}">
+	                       <td>{{ comment.id }}</td>
+	                       <td>
+	                        <div>
+	                            <span class="comment-copy">{{ comment.content }} </span> &nbsp;&nbsp;<small>—</small>
+	                            <a href="/users/418055/android-eve" title="3139 reputation" class="comment-user">{{ comment.author.username }}</a> 
+	                            <span class="comment-date" dir="ltr">{{ comment.created }}</span>
+	                        </div>
+	                       </td>
+	                    </tr>
+	                {% endfor %}
+	            </tbody>
+            </table>
+        
+        <!-- show more comments -->
+        {% comment %}
+	        <a id="comments-link-{{sharing.id}}" class="comments-link" title="expand to show all comments on this post">
+		        show<b>  0  </b>more comment
+		    </a>
+	    {% endcomment %}
+	    
+	     <!-- add comment -->
+	    {% if user.is_authenticated %}
+			<a class="btn margin_bottom_18 publish_comment_show">add comment</a>
+	        <form class="form hide" action="/sharings/{{sharing.id}}/comment/post/" method="post">
+			    {% csrf_token %}
+			    <input type="hidden" name="form_sharingId" value="{{sharing.id}}"/>
+			    <div class="clearfix">
+		            <textarea rows="3" name="form_commentContent" cols="60" class="span8"></textarea>
+		            <input type="submit" name="form_comment_submit" value="Add Comment" class="btn primary">
+		            <span class="help-block">
+		              <span name="left_comment_count">200</span> characters left
+		            </span>
+			    </div>
+		    </form>
+	    {% endif %}
+	</div>
+</div>

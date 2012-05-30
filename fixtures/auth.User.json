@@ -1,0 +1,92 @@
+[
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "colin", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-01-05 14:41:38", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$57914$42cf0d54aaf9270aab7593ed6b182ed8b96d8175", 
+            "email": "cc@cc.com", 
+            "date_joined": "2011-12-21 17:20:59"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "albert", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2011-12-21 17:20:59", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$57914$42cf0d54aaf9270aab7593ed6b182ed8b96d8175", 
+            "email": "cc@cc.com", 
+            "date_joined": "2011-12-21 17:20:59"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "john", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2011-12-21 17:20:59", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$57914$42cf0d54aaf9270aab7593ed6b182ed8b96d8175", 
+            "email": "cc@cc.com", 
+            "date_joined": "2011-12-21 17:20:59"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "allen", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-01-04 16:41:44", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$57914$42cf0d54aaf9270aab7593ed6b182ed8b96d8175", 
+            "email": "cc@cc.com", 
+            "date_joined": "2011-12-21 17:20:59"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "clara", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2011-12-21 17:20:59", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$57914$42cf0d54aaf9270aab7593ed6b182ed8b96d8175", 
+            "email": "cc@cc.com", 
+            "date_joined": "2011-12-21 17:20:59"
+        }
+    }
+]

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Beehive Base page</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/bootstrap.css" />
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/common.css" />
+	{% block extrastyle %}{% endblock %}
+
+	{% block extrahead %}{% endblock %}
+  </head>
+
+  <body>
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="#">Beehive</a>
+          <ul class="nav">
+            <li class="active"><a href="{% url newversion %}">Home</a></li>
+            <li><a href="{% url anothehomepage %}">About</a></li>
+            <li><a href="{% url hotest %}">Old Version</a></li>
+          </ul>
+          <form class="pull-left" action="">
+		      <input type="text" placeholder="Search">
+		  </form>
+          <ul class="secondary-nav" id="topbar_logined" {% if not user.is_authenticated %}style="display:none"{% endif %}>
+            <li><a href="#about"  class="active">{{ user.username }}</a></li>
+            <li><a href="/logout/">Log out</a></li>
+          </ul>
+          <form action="/login_ajax/" class="pull-right" id="topbar_unlogin" method="post" {% if user.is_authenticated %}style="display:none"{% endif %}>
+          	{% csrf_token %}
+            <input class="input-small" type="text" placeholder="Username">
+            <input class="input-small" type="password" placeholder="Password">
+            <button class="btn" type="submit">Sign in</button>
+            <a href="{% url regist %}"><button class="btn" type="submit">Regist</button></a>
+          </form>
+        </div>
+      </div>
+    </div><!-- /topbar -->
+    
+    <header id="overview" class="jumbotron">
+      <div class="inner">
+        <div class="container">
+            {% block overview %}{% endblock %}
+        </div><!-- /container -->
+      </div>
+    </header><!-- /overview -->
+    
+    <div class="quickstart">
+      <div class="container">
+      {% block quickstart %}
+        <div class="row">
+            <div class="span6"><h1>Beehive</h1></div>
+            <div class="span6">
+                <a class="btn {% if request.path == '/sharings/hotest/' %}info{% endif %}" href="/sharings/hotest/">Hottest</a>
+                {% if user.is_authenticated %}
+                    <a class="btn {% if request.path == '/sharings/myfollow/' %}info{% endif %}" href="/sharings/myfollow/">My Followed</a>
+                {% endif %}
+                <a class="btn {% if request.path == '/sharings/all/' %}info{% endif %}" href="/sharings/all/">All Sharings</a>
+            </div>
+            <div class="span3">
+                <a class="btn {% if request.path == '/sharings/add/' %}info{% endif %} pull-right" href="/sharings/add/">New Sharing</a>
+            </div>
+        </div><!-- /row -->
+        {% endblock %}
+      </div>
+    </div><!--/quickstart -->
+
+    <div class="container">
+        {% block pageheader %}
+	       <div class="page-header">
+	          <h2>Content Name</h2>
+	       </div>
+        {% endblock %}
+        
+       <div class="row">
+         <div class="span9 center-content">
+         	{% block centercontent %}
+	        <div class="content-header">
+		          <h3>Center Content</h2>
+	        </div>
+         	{% endblock %}
+         </div>
+         
+         <div class="dashboard">
+           {% block rightcontent %}
+            <h3>Secondary content</h3>
+           {% endblock %}
+         </div>
+         
+        {% block detailpanel %}
+        {% endblock %}
+    </div> <!-- /container -->
+
+    <script src="{{ MEDIA_URL }}js/contributes/jquery/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <script src="{{ MEDIA_URL }}js/index.js" type="text/javascript"></script>
+    {% block extrajs %}{% endblock %}
+  </body>
+</html>

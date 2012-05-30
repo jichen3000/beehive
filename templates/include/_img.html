@@ -1,0 +1,25 @@
+<div class="outside">
+    <div class="inside">
+        <div class="sharing_picture">	     
+	     {% with media=sharing.mediafile_set.all|first %}
+                <a href="/sharings/{{sharing.id}}" title="{{media.title}}">
+                    <img src="{{ MEDIA_URL }}{{ media.file }}" 
+	                    {% if  media.is_over_16_9 %}
+	                        width="160"  
+	                    {% else %}
+	                         height="90"  
+	                    {% endif %}
+	                class="pic-scroll" src-index="0" all-src="{{sharing.get_mediafile_path_liststr}}" 
+	                src-prefix="{{ MEDIA_URL }}"/> 
+                </a>   
+                 
+                    <a class="arrow pre_arrow" style="display:none;"></a>       
+               {% if  sharing.mediafile_set.count > 1 %}
+                    <a class="arrow next_arrow"></a>
+               {% else %}
+                    <a class="arrow next_arrow" style="display:none;"></a>
+               {% endif %}
+         {% endwith %}         
+        </div>
+    </div>
+</div>

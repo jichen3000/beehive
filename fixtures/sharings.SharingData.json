@@ -1,0 +1,13 @@
+[
+    {
+        "pk": 1, 
+        "model": "sharings.sharingdata", 
+        "fields": {
+            "view_count": 0, 
+            "sharing": 8, 
+            "minus_voting_count": 0, 
+            "follow_count": 1, 
+            "plus_voting_count": 1
+        }
+    }
+]

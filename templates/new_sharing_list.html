@@ -1,0 +1,213 @@
+{% extends "new_base.html" %}
+{% block quickstart %}{% endblock %}
+{% block pageheader %}{% endblock %}
+{% block extrastyle %}
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/new_sharing_list.css" />
+{% endblock %}
+
+{% block centercontent %}
+  <div class="page-header home-header">
+    <div class="sharing-header-wrapper">
+	   <div class="sharing-adding-box">
+		   <div class="sharing-content-title">
+		      <h2>What's sharing?</h2>
+		   </div>
+		   <div class="text-area">
+			   <div class="text-area-editor">
+			      <textarea rows="3" cols="50" class="sharing-adding-editor"></textarea>
+			      <ul class="autocomplete-container" style="width: 498px; top: 73px; left: 0px; visibility: hidden;"></ul>
+			   </div>
+			 </div>
+		   <div class="sharing-button-container">
+					<div class="turkey-control">
+						<div class="turkey-add-action" original-title="">
+						  <div class="turkey"></div>
+						  <div class="swf"></div>
+						  <input type="file" name="media[]" class="turkey-file-input">
+						</div>
+						<form target="tweetbox_1" class="turkey-selected-files" enctype="multipart/form-data" action="https://upload.twitter.com/1/statuses/update_with_media.iframe" method="post">
+						  <input type="hidden" value="dd829696979e820af5cb6fc2683963be486fe518" name="post_authenticity_token">
+						  <input type="hidden" value="true" name="include_entities">
+						</form>
+						<iframe name="tweetbox_1" class="turkey-post-target"></iframe>
+					</div>
+					<div class="tweet-button-sub-container">
+						<input disabled="disabled" value="140" class="tweet-counter">
+						<button class="btn">Sharing</button>
+					</div>
+		   </div>
+		 </div>
+	   <ul  id="tabs"  class="tabs">
+	       <li class="active"><a href="/sharings/hotest/">Hotest Sharings</a></li>
+	       {% if user.is_authenticated %}
+	       <li class=""><a href="/sharings/myfollow/">My Followed</a></li>
+	       {% endif %}
+	       <li class=""><a href="/sharings/manafactuser/">Manufactuser</a></li>
+	  </ul>
+	  </div>
+  </div>
+  
+  
+	<div id="sharings-list-content" class="tab-content">
+	      <div class="tab-pane active stream">
+	          {% include "include/_new_sharing_list_content.html"%}
+	      </div>
+	      {% if user.is_authenticated %}
+	       <div class="tab-pane stream"></div>
+	      {% endif %}
+	      <div class="tab-pane stream"></div>
+	</div>
+{% endblock centercontent %}
+
+{% block rightcontent %}
+<div class="component">
+	<div class="tweet-activity">
+		<h2>
+		  <a class="title-link" href="">
+		    <span class="dashboard-component-title">Your Tweets</span>
+		    <span class="tweet-count user-stat-link">44</span>
+		   </a>
+		</h2>
+		<div class="tweet latest-tweet js-actionable-tweet">
+		  <div class="tweet-content">
+		    <div class="tweet-row ellipsify-container">
+			    <span class="ellip-content">
+			      <a title="2:38 PM, Jan 10th" class="latest-tweet-timestamp js-permalink" href="">
+			       <span data-long-form="true" data-time="1326177491000" class="_old-timestamp">10 Jan</span>
+			      </a>:
+			       <div class="tweet-text js-tweet-text">
+			         <a rel="nofollow" href="" class="twitter-atreply pretty-link">
+			           <b>sharing title</b>
+			         </a> sharing content ...
+			       </div>
+			    </span>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<hr class="component-spacer">
+</div>
+
+<div class="component">
+	<div class="your-activity following-activity">
+	  <h2>
+	    <a class="title-link" href="">
+	       <span class="dashboard-component-title">Following</span> 
+	       <span class="user-stat-link">48</span>
+	     </a>
+	  </h2>
+	  <h3></h3>
+	  <ul class="unstyled">
+	     <li><a>Allan</a></li>
+	     <li><a>Colin</a></li>
+	  </ul>
+	</div>
+	<div class="your-activity new-followers-activity">
+	  <h2>
+	    <a class="title-link" href="">
+		    <span class="dashboard-component-title">Followers</span> 
+		    <span class="user-stat-link">8</span>
+	    </a>
+	  </h2>
+	  <h3></h3>
+    <ul class="unstyled">
+       <li><a>Allan</a></li>
+       <li><a>Colin</a></li>
+	  </ul>
+	</div>
+	<hr class="component-spacer">
+</div>
+
+<div class="component">
+  <div class="user-rec-inner ">
+    <h2 class="user-rec-component">
+      <span class="dashboard-component-title">Products list</span>
+      <span class="dashboard-component-subtitle">
+        <span class="dot">·</span>
+        <a class="js-refresh-suggestions refresh-suggestions" href="#">refresh</a>
+        <span class="dot">·</span>
+        <a class="view-all" href="">view all</a>
+      </span>
+    </h2>
+    <ul class="unstyled">
+      <li><a>product 1</a></li>
+      <li><a>product 2</a></li>
+      <li><a>product 3</a></li>
+    </ul>
+  </div>
+  <hr class="component-spacer">
+</div>
+
+<div class="component">
+	<div class="trends-inner">
+	  <h2>
+	    Keywords:
+	      <span class="trends-inline-controls">
+	        <span class="dot">·</span>
+	        <span class="trend-toggle js-trend-toggle"><a href="#">change</a></span>
+	      </span>
+	    </h2>
+	    <ul class="unstyled">
+	      <li><a>keyword 1</a></li>
+	      <li><a>keyword 2</a></li>
+	      <li><a>keyword 3</a></li>
+	    </ul>
+	</div>
+	<hr class="component-spacer">
+</div>
+
+<div class="component">
+	<div class="trends-inner">
+	  <h2>
+	    Reports:
+	    </h2>
+	    <ul class="unstyled">
+	      <li><a href="/sharings/report/">statistic</a></li>
+	    </ul>
+	</div>
+	<hr class="component-spacer">
+</div>
+
+<div class="component">
+<div class="lastfooter inline-list">
+  <ul class="unstyled">
+    <li><a href="/about">About</a><span class="dot divider"> ·</span></li>
+    <li><a href="//support.twitter.com">Help</a><span class="dot divider"> ·</span></li>
+    <li><span class="copyright">&copy; 2012</span></li>
+  </ul>
+</div>
+  <hr class="component-spacer">
+</div>
+{% endblock rightcontent %}
+
+{% block detailpanel %}
+<div id="details-pane-outer" style="top: 60px;">
+	<div class="details-pane-shell">
+	  <div class="details-pane js-details-pane-hidden">
+	    <div class="inner-pane active" style="">
+					<div class="pane-toolbar pane-built-in">
+						<a href="#" class="pane-close toolbar-control">close <span>×</span></a>
+						<br style="clear: both;">
+					</div>
+					<div class="pane-components" style="height: 359px;">
+						<div class="pane-components-inner tweet-components">
+							<div class="component">
+								<div class="replies related-tweets" id="comments-container">
+									<fieldset class="in-reply-to-border">
+									<legend class="in-reply-to-text"> replies&nbsp;↓ </legend>
+									</fieldset>
+									<div class="margin_left_20 js-load-comments"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+	    </div>
+	  </div>
+	</div>
+</div>
+{% endblock detailpanel %}
+
+{% block extrajs %}
+    <script src="{{ MEDIA_URL }}js/slide_picture.js" type="text/javascript"></script>
+    <script src="{{ MEDIA_URL }}js/new_sharing_list.js" type="text/javascript"></script>
+{% endblock %}

@@ -1,0 +1,107 @@
+{% extends "new_base.html" %}
+{% block quickstart %}{% endblock %}
+
+{% block extrastyle %}
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/sharing_report.css" />
+{% endblock %}
+
+{% block extrajs %}
+ <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+ <script src="{{ MEDIA_URL }}js/sharing_report.js" type="text/javascript"></script>
+{% endblock %}
+
+ {% block pageheader %}
+<div class="page-header">
+	<h2>Report</h2>
+</div>
+{% endblock %} 
+{% block centercontent %}
+<table class="zebra-striped bordered-table">
+	<thead>
+		<tr>
+			<th>#</th>
+			<th># of Friends</th>
+			<th># of New Friends in Recent Month</th>
+			<th># of Related Messages(Attention of Brand)</th>
+			<th># of Related Messages in Recent Month</th>
+			<th># of Messages in Recent Month</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th class="brand">Coca-Cola</th>
+			<td>120508</td>
+			<td>7451</td>
+			<td><a href="" class="keyword-percentage">40638</a></td>
+			<td><a href="" class="keyword-percentage-recent">8000</a></td>
+			<td>500</td>
+
+		</tr>
+		<tr>
+			<th colspan="7">Competitors</th>
+		</tr>
+		<tr>
+			<th class="brand">Pepsi</th>
+			<td>98682</td>
+			<td>4367</td>
+			<td><a href="" class="keyword-percentage">56783</a></td>
+			<td><a href="" class="keyword-percentage-recent">8000</a></td>
+			<td>357</td>
+
+		</tr>
+		<tr>
+            <th class="brand">KangShiFu</th>
+            <td>98682</td>
+            <td>4367</td>
+            <td><a href="" class="keyword-percentage">35794</a></td>
+            <td><a href="" class="keyword-percentage-recent">8000</a></td>
+            <td>357</td>
+
+        </tr>
+		<tr>
+			<th class="brand">RedBull</th>
+            <td>98682</td>
+            <td>4367</td>
+            <td><a href="" class="keyword-percentage">50000</a></td>
+            <td><a href="" class="keyword-percentage-recent">8000</a></td>
+            <td>357</td>
+		</tr>
+		<tr>
+            <th class="brand">Nestle</th>
+            <td>98682</td>
+            <td>4367</td>
+            <td><a href="" class="keyword-percentage">50000</a></td>
+            <td><a href="" class="keyword-percentage-recent">8000</a></td>
+            <td>357</td>
+        </tr>
+		<tr>
+            <th class="brand">TongYi</th>
+            <td>98682</td>
+            <td>4367</td>
+            <td><a href="" class="keyword-percentage">50000</a></td>
+            <td><a href="" class="keyword-percentage-recent">8000</a></td>
+            <td>357</td>
+        </tr>
+        <tr>
+            <th class="brand">Wahaha</th>
+            <td>98682</td>
+            <td>4367</td>
+            <td><a href="" class="keyword-percentage">50000</a></td>
+            <td><a href="" class="keyword-percentage-recent">8000</a></td>
+            <td>357</td>
+        </tr>
+         <tr>
+            <th class="brand">WangLaoJi</th>
+            <td>98682</td>
+            <td>4367</td>
+            <td><a href="" class="keyword-percentage">50000</a></td>
+            <td><a href="" class="keyword-percentage-recent">8000</a></td>
+            <td>357</td>
+        </tr>
+	</tbody>
+</table>
+{% endblock %}
+
+ {% block rightcontent %}
+ <div id="chart_div"></div>
+{% endblock %}

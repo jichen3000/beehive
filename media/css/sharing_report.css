@@ -1,0 +1,50 @@
+body{
+    background-color: #C1DEEE;
+}
+
+.quickstar, .jumbotron{
+    background-color: #C1DEEE;
+    padding-top:0px;
+}
+
+body>.container{
+    width: 940px;
+    margin-top: 20px;
+    padding-top:0px;
+    background: none repeat scroll 0 0 rgba(221, 238, 246, 0.9);
+}
+
+.center-content{
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    height: 100%;
+    width: 580px;
+    min-height: 700px;
+    position: relative;
+    z-index: 4;
+}
+
+.dashboard {
+    border-top-right-radius: 5px;
+    max-width: 380px;
+    overflow: hidden;
+    padding: 12px 20px;
+    position: relative;
+    display: inline;
+    float: left;
+}
+
+#chart_div{
+	 width: 300px;
+	 margin: 2px 0 0 -6px;
+}
+
+.container table{
+	background: none repeat scroll 0 0 #FFFFFF;
+	margin: 13px 0 0 13px;
+}
+
+.center-content {
+	box-shadow: none;
+}
